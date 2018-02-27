@@ -3,6 +3,7 @@
 // Operadores de Aritiméticos
 
 echo "<pre>";
+
 $a = 5;
 $b = 2;
 $soma = $a + $b;
