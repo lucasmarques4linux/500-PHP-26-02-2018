@@ -24,7 +24,7 @@ if ($a == "Lucas") {
 
 echo "<hr>";
 
-$idade = 61;
+$idade = 14;
 
 // MAior de 18 voto é obrigatório
 // 16 e <18 voto opcional
