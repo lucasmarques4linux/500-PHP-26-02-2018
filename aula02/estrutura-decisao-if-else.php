@@ -40,7 +40,7 @@ if ($idade >= 18 && $idade < 60) {
 	echo "Idade Inválida";
 }
 
-$num;
+$num = 10;
 // Se o número dividor por 2 e resto da divisão = 0
 // Módulo % -> retorna o resto da divisão
 
