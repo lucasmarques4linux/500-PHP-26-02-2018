@@ -9,15 +9,15 @@ $pessoa = ["Lucas",24 , 1.80,82,"Marques",1];
 $pessoa[] = "Programador";
 
 // print_r($pessoa);
-// echo $pessoa[5];
+// echo $pessoa[0];
 
-for ($i=0; $i < 7; $i++) { 
-	if ($i == 1) {
-		continue;
-	}
-	echo $pessoa[$i] . "\n";
-}
-echo "<hr>";
+// for ($i=0; $i < 7; $i++) { 
+// 	if ($i == 1) {
+// 		continue;
+// 	}
+// 	echo $pessoa[$i] . "\n";
+// }
+// echo "<hr>";
 
 $pessoa = [
 	"nome" => "Lucas",
@@ -25,4 +25,5 @@ $pessoa = [
 	"altura" => 1.80
 ];
 
-print_r($pessoa);
+// print_r($pessoa);
+// echo $pessoa['nome'];

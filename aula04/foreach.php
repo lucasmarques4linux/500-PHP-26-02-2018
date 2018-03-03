@@ -22,12 +22,12 @@ foreach ($pessoa as $valor) {
 echo "<hr>";
 var_dump($pessoa);
 foreach ($pessoa as $chave => $valor) {
-	// echo "$chave -> $valor \n";
-	if ($chave == 'nome') {
-		echo $valor;
-	}
+	echo "$chave -> $valor \n";
+	// if ($chave == 'nome') {
+	// 	echo $valor;
+	// }
 }
-// echo $pessoa['nome'];
+echo $pessoa['nome'];
 
 echo "<hr>";
 

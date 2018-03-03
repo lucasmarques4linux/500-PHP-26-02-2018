@@ -10,6 +10,7 @@ $temp = [
 			'Janeiro' => 27,
 			'Fevereio' => 26,
 			'Marco' => 30
-		]
+		],
+	"Dezembro"
 ];
-print_r($temp['2017']['Fevereio']);
+print_r( $temp);
