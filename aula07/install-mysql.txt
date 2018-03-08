@@ -1,0 +1,9 @@
+No terminal ctrl+shift+t
+sudo apt update
+sudo apt install php7.0-mysql
+sudo service apache2 restart
+
+
+No banco de dados;
+CREATE USER 'lucas'@'localhost' IDENTIFIED BY '@da4linux';
+GRANT ALL PRIVILEGES ON *.* TO 'lucas'@'localhost';

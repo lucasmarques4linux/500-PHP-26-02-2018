@@ -1,0 +1,44 @@
+sudo apt update - Atualiza repositórios
+sudo apt install postgresql - Instala Postgres
+
+sudo su - Loga como root
+su postgres - Loga como postgres
+psql - Abre o postrgreSql
+
+CREATE DATABASE aula08; - criar banco de dados
+\l - listas banco de dados
+q - sair
+
+CREATE USER lucas PASSWORD '123'; - Criar usuario
+\du - listar usuários
+
+ALTER DATABASE aula08 OWNER TO lucas; - Alterando dono do banco de dados
+\l
+\q - sair do postgresql
+exit - sair do usuario postgres
+exit - sair do usuario root
+
+psql -h localhost -U lucas aula08 - Entrando no banco aula08 com o usuário lucas no host localhost
+
+CREATE TABLE usuarios(
+id SERIAL PRIMARY KEY,
+usuario VARCHAR(255) NOT NULL,
+senha VARCHAR(40) NOT NULL
+);
+
+\dt - listas as tabelas
+\d usuarios - informações da tabela
+
+CREATE TABLE posts(
+id SERIAL PRIMARY KEY,
+usuario_id INT REFERENCES usuarios(id),
+post VARCHAR(140) NOT NULL
+);
+
+ALTER TABLE posts ALTER COLUMN usuario_id SET NOT NULL;
+
+-------------------------------------------
+sudo apt update
+sudo apt install php7.0-pgsql
+sudo service apache2 restart
+
